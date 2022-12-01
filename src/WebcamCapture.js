@@ -21,7 +21,7 @@ function WebcamCapture() {
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
         dispatch(setCameraImage(imageSrc));
-        history.push('/preview');
+        navigate("/preview")
         // navigate('/preview');
 
         // eslint-disable-next-line
