@@ -16,7 +16,7 @@ const videoConstraints = {
 function WebcamCapture() {
     const webcamRef = useRef(null);
     const dispatch = useDispatch();
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
