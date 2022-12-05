@@ -1,0 +1,51 @@
+.chats{
+    position: relative;
+    height: 400px;
+    width: 250px;
+}
+
+.chats_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #059ee0;
+    height: 50px;
+}
+
+.chats_search{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.chats_search > input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    color: #fff;
+}
+
+.chats_search > input::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+
+.chats_Avatar{
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.chat_post{
+    height: 359px;
+    background-color: #fff;
+    box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
+    margin-top: -9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
