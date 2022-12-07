@@ -4,9 +4,22 @@
 
 .webcamCapture_button{
     position: absolute;
-    bottom: 0;
+    bottom: 10% !important;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    color: white;
+    /* color: white; */
+}
+
+.chats_takePicIcon{
+    position: absolute;
+    background-color: transparent;
+    border-radius: 200px;
+    color: gray;
+    font-size: 40px !important;
+    cursor: pointer;
+    bottom: 10% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }

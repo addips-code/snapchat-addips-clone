@@ -17,7 +17,7 @@ function Chat({ id, username, timestamp, profilePic, read, imageUrl}) {
     const open = () => {
         if (!read) {
             dispatch(selectImage(imageUrl));
-            db.collection("posts").doc(id).set(
+            db.collection('post').doc(id).set(
             {
                 read: true,
             }, 
@@ -31,7 +31,7 @@ function Chat({ id, username, timestamp, profilePic, read, imageUrl}) {
         <Avatar src={profilePic} className='chat_avatar' />
         <div className="chat_info">
             <h4>{username}</h4>
-            <p>Tap to view - <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()}/></p>
+            <p>{!read && 'Tap to view -'}{" "} <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()}/></p>
         </div>
 
         {!read && <StopRounded className='chat_readIcon'/>}

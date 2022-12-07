@@ -38,7 +38,7 @@ function WebcamCapture() {
             videoConstraints={videoConstraints }
         />
 
-        <RadioButtonUnchecked className='webcamCapture_button' onClick={capture} fontSize="large"/>
+        <RadioButtonUnchecked className='chats_takePicIcon' onClick={capture} fontSize="large"/>
     </div>
   );
 }

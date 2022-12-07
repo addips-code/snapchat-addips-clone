@@ -49,3 +49,29 @@
     overflow: scroll;
     scroll-behavior: smooth;
 }
+
+.chats_takePicIcon{
+    position: absolute;
+    background-color: transparent;
+    border-radius: 200px;
+    color: gray;
+    font-size: 40px !important;
+    cursor: pointer;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chats_takePicIcon:hover{
+    opacity: 0.8;
+}
+
+.search_icon{
+    color: #fff;
+    font-size: 13px !important;
+}
+
+.chats_chatIcon{
+    color: #fff;
+    font-size: 18px !important;
+}

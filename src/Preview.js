@@ -7,11 +7,13 @@ import { resetCameraImage, selectCameraImage } from './features/cameraSlice';
 import { db, storage } from "./firebase";
 import './preview.css'
 import firebase from "firebase";
+import { selectUser } from './features/appSlice';
 
 function Preview() {
   const cameraImage = useSelector(selectCameraImage)
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
   useEffect(() => {
     if (!cameraImage) {
@@ -36,6 +38,7 @@ function Preview() {
           imageUrl: url,
           username: 'Adeola',
           read: false,
+          profilePic: user.profilePic,
           timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
         navigate("/chats")
