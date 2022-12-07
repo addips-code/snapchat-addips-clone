@@ -36,7 +36,7 @@ function Preview() {
       storage.ref("post").child(id).getDownloadURL().then(url => {
         db.collection('post').add({
           imageUrl: url,
-          username: 'Adeola',
+          username: user.displayName,
           read: false,
           profilePic: user.profilePic,
           timestamp: firebase.firestore.FieldValue.serverTimestamp(),
